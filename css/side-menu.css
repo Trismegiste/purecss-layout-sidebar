@@ -237,7 +237,6 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
 }
 
-nav.topbar ul {
-    margin-top: 1px;
-    padding-left: 52px; 
+nav.topbar {
+    padding-left: 52px; /* because font-size 10px * ( 2 * padding 1.6em + width 2em ) */
 }
