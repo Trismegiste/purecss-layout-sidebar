@@ -2,10 +2,6 @@ body {
     color: #666;
 }
 
-h1, h2, h3, h4 {
-    font-weight: 300;
-}
-
 /*
 Add transition to containers so they can push in and out.
 */
@@ -42,11 +38,14 @@ This is the parent `<div>` that contains the menu and the content area.
 The content `<div>` is where all your content goes.
 */
 .content {
-    margin: 0 auto;
-    padding: 0 1.2em;
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.6em;
+}
+
+.topbar {
+    padding-left: 52px; /* because font-size 10px * ( 2 * padding 1.6em + width 2em ) */
+    margin-top: 0.5em;
 }
 
 /*
@@ -184,12 +183,6 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 */
 @media (min-width: 48em) {
 
-    .header,
-    .content {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
     #layout {
         padding-left: 150px; /* left col width "#menu" */
         left: 0;
@@ -207,9 +200,9 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     #layout.active .menu-link {
         left: 150px;
     }
+
+    .topbar {
+        padding-left: 1em;
+    }
 }
 
-.topbar {
-    padding-left: 52px; /* because font-size 10px * ( 2 * padding 1.6em + width 2em ) */
-    margin-top: 0.5em;
-}
