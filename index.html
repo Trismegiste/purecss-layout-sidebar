@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/side-menu.css"/>
         <link rel="stylesheet" href="css/main.css"/>
         <link rel="stylesheet" href="css/fontello.css"/>
+        <link rel="stylesheet" href="css/jquery.dropdown.css"/>
     </head>
     <body>
         <div id="layout">
@@ -84,6 +85,25 @@
                             <article>
                                 <h4>nickname<time datetime="2014-11-01">5 min ago</time></h4>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup
+
+                                <div class="pub-action pure-menu pure-menu-open pure-menu-horizontal">
+                                    <ul>
+                                        <li><a href="#"><i class="icon-reply"></i>7</a></li>
+                                        <li><a href="#"><i class="icon-retweet"></i>7</a></li>
+                                        <li><a href="#"><i class="icon-heart-empty"></i>7</a></li>
+                                        <li><a href="#" data-dropdown="#dropdown-pub-action"><i class="icon-cog"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div id="dropdown-pub-action" class="dropdown dropdown-anchor-right">
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#2">Edit</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li><a href="#4">Delete</a></li>
+                                        <li><a href="#1">Report abuse or spam</a></li>
+                                    </ul>
+                                </div>
+
                             </article>
                         </div>
                     </div>
@@ -111,6 +131,12 @@
         </div> <!-- end layout block -->
 
         <script src="js/ui.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery.dropdown.min.js"></script>
+        <script src="js/riot.min.js"></script>
+        <!-- start the application -->
+        <script>
 
+        </script>
     </body>
 </html>
