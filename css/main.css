@@ -19,3 +19,8 @@ h1, h2, h3, h4 {
 .commentary {
     margin-left: 15%;
 }
+
+.entry time {
+    font-size: 0.7em;
+    margin-left: 3em;
+}
