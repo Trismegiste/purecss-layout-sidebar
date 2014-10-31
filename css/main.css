@@ -8,7 +8,7 @@ h1, h2, h3, h4 {
     color: #777;
 }
 
-.entry header, article {
+.entry header, article, form {
     padding: 0.6em;
 }
 
